@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="disp()">
+    <h1 id="heading">First Image</h1>
+    <div style="display: flex;">
+        <div style="padding-top: 50px;">
+
+            <img src="../images/iron.jpg" alt="not suppoeted" height="250px" width="250px" onclick="changeimage()"
+                id="image1">
+
+
+        </div>
+        <div style="padding-left: 100px;">
+            <img src="../images/ironman.jpg" alt="not supported" height="250px" height="250px" id="image2" onclick="change2()">
+        </div>
+    </div>
+
+
+    <script src="../javascript/flipimage.js"></script>
+</body>
+
+</html>

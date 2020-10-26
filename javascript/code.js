@@ -29,3 +29,11 @@ function getchosendata() {
     let x = document.getElementById("colors").value
     document.getElementById("color").value = x
 }
+
+
+let str1=new String(" hello world ")
+console.log(str1)
+console.log(str1.toUpperCase())
+console.log(str1.length)
+console.log(str1.substring(2,6))
+console.log(str1.startsWith("this"))

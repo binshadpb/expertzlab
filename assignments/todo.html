@@ -9,11 +9,16 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <style>
         h2 {
-           padding-left: 50px;
-            color:slateblue;
+            padding-left: 50px;
+            color: slateblue;
         }
-        input{
+
+        input {
             padding-left: 100px;
+        }
+
+        .btn-styled {
+           
         }
     </style>
 </head>
@@ -26,10 +31,11 @@
             <h2>To Do list</h2>
             <input type="text" placeholder="enter here" id="inputbox">
             <button type="button" class="btn btn-primary" onclick="addelement()">ADD</button>
-            <ul id="listitem">
+            <div id="listdiv">
+                <ul id="listitem">
 
-            </ul>
-
+                </ul>
+            </div>
 
         </div>
         <!--tommorow_list area-->

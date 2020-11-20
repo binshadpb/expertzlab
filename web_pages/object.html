@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //object creation in JS
+
+        let obj = {}
+        console.log(obj, typeof obj)
+
+        let employee = { name: "binshad", age: 22, salary: 25000,updatesalary:function(amount){
+         this.salary+=amount
+         console.log("updated salary"+this.salary)
+        }}
+        console.log(employee)
+        employee.salary=30000
+        employee.eid=101
+        console.log(employee)
+        employee.updatesalary(5000)
+
+       employee.display=function(){
+           console.log("Name: "+employee.name)
+           console.log("Age: "+employee.age)
+           console.log("Salary: "+employee.salary)
+       }
+      employee.display()
+
+     let student={roll_no:01,name:"Anu",age:23,marks:[55,65,75],average:function(){
+        let total=0
+        for(x of (this.marks)) {
+            total+=x
+        }
+     let avg=total/this.marks.length
+     console.log(avg)
+
+     }}
+     console.log(student.marks)
+     student.average()
+
+
+     let stud_student=Object.create(student)
+     console.log(stud_student.marks)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

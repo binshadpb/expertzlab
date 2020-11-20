@@ -40,13 +40,28 @@
         // }
 
 //replace function
-var text="python meets python here python"
+//var text="python meets python here python"
+//var reg=/python/g
+//var result=text.replace(reg,"java")
+//alert(result)
+
+// Assignment on regular Expression
+
+
+//var msg="my phone number is 9876543210 and my office number is (0484)-2242303 and fax no is (0485) 1234567"
+
+var reg=/^(9876543210)|(\(0484\)\-)|(\(0485\))\s|(2242303)|(1234567)$/g
+var input=prompt("Enter mobile_no")
+        var result=input.match(reg)
+        alert(result)
+
+
+
+
 
     </script>
 
-<textarea name="" id="cont" ></textarea>
-<input type="text">
-<button>Search</button>
+
 
 
 </body>
